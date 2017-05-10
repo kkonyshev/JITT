@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class FileDataReader {
+
     public List<String> readData () {
         List<String> data = new ArrayList<>();
         try {
