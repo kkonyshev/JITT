@@ -27,8 +27,8 @@
     </build>
 
     <modules>
-        <module>core</module>
         <module>transformers</module>
+        <module>core</module>
     </modules>
 
     <dependencyManagement>
@@ -36,6 +36,12 @@
             <dependency>
                 <groupId>com.britebill.interview</groupId>
                 <artifactId>core</artifactId>
+                <version>${project.version}</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>com.britebill.interview</groupId>
+                <artifactId>transformers</artifactId>
                 <version>${project.version}</version>
                 <type>jar</type>
             </dependency>

@@ -15,4 +15,11 @@
 
     <name>${project.artifactId}-${project.version}</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.britebill.interview</groupId>
+            <artifactId>transformers</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
