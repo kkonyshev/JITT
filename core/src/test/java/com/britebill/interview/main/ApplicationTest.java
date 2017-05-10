@@ -38,7 +38,7 @@ public class ApplicationTest {
     public void test_fileRead() {
         FileDataReader fileDataReader = context.getBean(FileDataReader.class);
 
-        List<String> lines = fileDataReader.readData();
+        List<String> lines = fileDataReader.readData("/data/test_data.example");
         assertThat(lines).containsExactly("LINE1", "A", "B");
     }
 }

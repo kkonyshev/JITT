@@ -1,7 +1,6 @@
 package com.britebill.interview.main;
 
 import com.britebill.interview.transformers.TransformerData;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,7 +12,7 @@ public class Application {
         ApplicationContext context = new ClassPathXmlApplicationContext("context/context.xml");
         FileDataReader fileDataReader = (FileDataReader) context.getBean("fileDataReader");
 
-        List<String> data = fileDataReader.readData();
+        List<String> data = fileDataReader.readData("/data/data.example");
         TransformerData transformerData = (TransformerData) context.getBean("transformerData");
         List<String> transformedData = transformerData.transformData(data);
 
