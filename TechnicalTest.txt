@@ -1,0 +1,12 @@
+1. Fix compilation
+We have detected that trunk is not compiling anymore.
+Check what is broken, fix it and continue development.
+Trunk is part of ZIP file you received.
+To run this application, you need to execute main method from com.britebill.interview.main.Application
+
+2. Transform data
+We need that you develop the following tasks inside TransformersData class of transformers module:
+Remove all repeated entries.
+Sort it by length in the same way: first, words of one letter, second: words of two letters, etc.
+Convert everything to uppercase.
+
