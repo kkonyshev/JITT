@@ -5,5 +5,7 @@
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="FileDataReader" name="fileDataReader" class="com.britebill.interview.main.FileDataReader" scope="singleton"/>
+    <bean id="TransformerData" name="transformerData" class="com.britebill.interview.transformers.TransformerData" scope="singleton"/>
 
 </beans>

@@ -8,10 +8,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class FileDataReader {
-    public List<String> readData () {
+
+    public List<String> readData(String dataFile) {
         List<String> data = new ArrayList<>();
         try {
-            data = Files.lines(Paths.get(this.getClass().getResource("/data/data.example").getFile())).collect(Collectors.toList());
+            data = Files.lines(Paths.get(this.getClass().getResource(dataFile).getFile())).collect(Collectors.toList());
         } catch (IOException e) {
             System.err.println ("Problem reading data file");
         }
